@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="World Wide Water - Providing clean and sustainable water solutions worldwide." />
+    <meta name="keywords" content="water, clean water, sustainable water, water solutions, environment" />
+    <meta name="author" content="World Wide Water Team" />
+    <title>World Wide Water</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="icon" href="/src/imagenes/Logo.png" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/src/imagenes/Logo.png" alt="logo" class="logo" id="logo">
+        <ul>
+            <li><a href="#home" aria-label="Home">Inicio</a></li>
+            <li><a href="#about" aria-label="About Us">Sobre Nosotros</a></li>
+            <li><a href="#services" aria-label="Our Services">Servicios</a></li>
+            <li><a href="#contact" aria-label="Contact Us">Contacto</a></li>
+        </ul>
+    </nav>
+    <img src="/src/imagenes/Ondas.png" alt="" class="ondas" id="ondas">
+    <main>
+<section id="home" class="home">
+    <video autoplay muted loop id="video-background" class="video-background">
+        <source src="src/videos/video-background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="contenedor">
+        <h1>World Wide<br><span>Water</span></h1>
+        <p>“Calidad que ves, respaldo que sientes, confianza que perdura.”</p>
+        <div class="btn-container">
+        <button class="button" method="get" action="#services">
+            <span class="liquid"></span>  
+            <span class="btn-txt">Catálogo</span>
+        </button>
+        <button class="button" method="get" action="#contact">
+            <span class="liquid"></span>  
+            <span class="btn-txt">Contáctanos</span>
+        </button>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="about">
+            <div class="container">
+            <h2>Acerca de nosotros</h2>
+            <p><span>🌊 Misión: </span>En WWW (World Wide Water) nos dedicamos a ofrecer soluciones integrales para el tratamiento, control y uso responsable del agua. Proveemos equipos de ósmosis inversa, purificadoras, filtros y productos de la más alta calidad, respaldados por un equipo profesional capacitado y comprometido. Nuestro propósito es garantizar agua pura y segura para hogares, empresas e industrias en Costa Rica, contribuyendo al bienestar de las personas y al cuidado del medio ambiente.
+                <br>
+                <br>
+                <span>🌍 Visión: </span>Ser la empresa líder en Costa Rica y referente en Latinoamérica en tecnologías de purificación y tratamiento de agua, reconocida por nuestra innovación, compromiso ambiental y excelencia en servicio, ofreciendo soluciones que mejoren la calidad de vida de las personas y promuevan un futuro sostenible para todos.
+            </p>
+            </div>
+            <img src="/src/imagenes/machine-1.png" alt="foto-about" class="about-image">
+        </section>
+
+
+
+        <section class="catalog" id="catalog">
+            <h2>Catálogo</h2>
+            <p>En este apartado podrás encontrar información sobre nuestros productos y servicios.</p>
+            <div class="catalog-container">
+                <div class="catalog-item" id="item-1"></div>
+                <div class="catalog-item" id="item-2"></div>
+                <div class="catalog-item" id="item-3"></div>
+                <div class="catalog-item" id="item-4"></div>
+                <div class="catalog-item" id="item-5"></div>
+                <div class="catalog-item" id="item-6"></div>
+            </div>
+        </section>
+
+
+
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <p>Explore our range of water purification, distribution, and conservation services.</p>
+        </section>
+
+
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for more information or to support our mission.</p>
+        </section>
+    </main>
+    <script src="src/script.js"></script>
+</body>
+</html>
