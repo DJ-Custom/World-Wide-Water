@@ -256,6 +256,8 @@ section {
     font-size: 1.2rem;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: bold;
+
 }
 .catalog .catalog-container {
     display: flex;
@@ -578,18 +580,21 @@ footer p {
     }
     .catalog {
         height: auto;
+        width: 100%;
     }
+
     .catalog .catalog-container {
         gap: 12px;
         flex-direction: row;
         align-items: center;
+        width: 100%;
     }
     .catalog-container .catalog-item {
         width: 160px;
         height: 160px;
         rotate: 140deg;
         border-radius: 50% 50% 50% 0;
-        margin: 20px px;
+        margin: 30px 5px;
     }
     .catalog-container .catalog-item h3 {
         font-size: 1.5rem;
@@ -648,6 +653,7 @@ footer p {
         flex-direction: column;
         padding: 10px;
     }
+    
 }
 
 @media (min-width: 701px) and (max-width: 900px) {
@@ -856,7 +862,8 @@ footer p {
         font-size: 5rem;
     }
     .catalog .catalog-txt{
-        font-size: 1.4rem;
+        font-size: 2rem;
+        font-weight: bold;
     }
     #services {
         height: auto;
