@@ -2,11 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogItems = document.querySelectorAll('.catalog-item');
 
     catalogItems.forEach(item => {
-        item.addEventListener('click', () => {
+        // Support both click and touch events for mobile compatibility
+        const handleInteraction = (e) => {
+            e.preventDefault();
             item.classList.toggle('rotated');
+        };
+
+        // Add click event for desktop
+        item.addEventListener('click', handleInteraction);
+        
+        // Add touch events for mobile
+        item.addEventListener('touchstart', handleInteraction);
+        
+        // Prevent default touch behaviors
+        item.addEventListener('touchmove', (e) => {
+            e.preventDefault();
         });
     });
-});
+
     // Red
     const catalogButton = Array.from(document.querySelectorAll('button')).find(btn => {
         const span = btn.querySelector('span.btn-txt');
@@ -35,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
+});
